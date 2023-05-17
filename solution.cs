@@ -1,7 +1,6 @@
-class Node {
-    constructor(data) {
-        this.data = data;
-        this.left = null;
-        this.right = null;
-    }
+function findDuplicateSubtrees(root) {
+    let count = new Map();
+    let ans = [];
+    collect(root, count, ans);
+    return ans;
 }
